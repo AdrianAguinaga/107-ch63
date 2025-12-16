@@ -1,0 +1,55 @@
+/* Product.css */
+
+.product {
+  width: 280px;            /* Fixed width for uniformity */
+  border: 1px solid #ddd;  /* Light grey border */
+  border-radius: 8px;      /* Rounded corners */
+  padding: 20px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  display: inline-block;   /* Allows them to sit next to each other */
+  vertical-align: top;
+  text-align: center;      /* Center aligns image and text */
+  transition: transform 0.2s ease; /* smooth hover effect */
+}
+
+/* Hover effect to make it "pop" */
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Constrain image size */
+.product img {
+  width: 100%;             /* Fill the container width */
+  height: 200px;           /* Fixed height */
+  object-fit: contain;     /* Keep aspect ratio, don't stretch */
+  margin-bottom: 15px;
+}
+
+.product h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.prices {
+  display: flex;           /* Aligns price and total nicely */
+  justify-content: space-between;
+  padding: 10px 5px;
+  border-top: 1px solid #eee;
+  margin-bottom: 15px;
+}
+
+.prices label {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Style specifically for the price number if you want it bold */
+.prices label:first-child {
+  font-weight: bold;
+  color: #2c3e50;
+}
